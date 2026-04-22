@@ -1,14 +1,12 @@
-#include "mywc.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[]) {
-  if (argc != 2) {
-    printf("Usage: %s <filename>\n", argv[0]);
-    return 1;
-  }
-  mywc(argv[1]);
+#include "mywc.h"
 
-  return 0;
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        printf("Usage: %s <filename>\n", argv[0]);
+        return 1;
+    }
+    return mywc(argv[1]);
 }
-
